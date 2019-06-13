@@ -59,7 +59,6 @@ public class FragmentStorage extends Fragment {
     // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
-    private ImageView imagepoint;
     FirebaseStorage storage;
 
 
@@ -134,7 +133,6 @@ public class FragmentStorage extends Fragment {
 
 
     }
-    
 
     private void  ConsultarStoresEnTiempoReal(){
         FirebaseFirestore dtbs = FirebaseFirestore.getInstance();
