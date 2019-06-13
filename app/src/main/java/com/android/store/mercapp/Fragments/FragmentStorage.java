@@ -72,8 +72,7 @@ public class FragmentStorage extends Fragment {
     private OnFragmentInteractionListener mListener;
     RecyclerView storageview;
     ArrayList<Storage> ListaStorage;
-    Storage tienda = new Storage();
-    String Estadocirculo = tienda.getEstado();
+    
     public FragmentStorage() {
         // Required empty public constructor
     }
@@ -107,10 +106,7 @@ public class FragmentStorage extends Fragment {
         storageRef = storage.getReference();
         //consultarStores();
         ConsultarStoresEnTiempoReal();
-        imageView.findViewById(R.id.imgCircle);
-        if (Estadocirculo.equals("Cerrado")){
-            imageView.setImageResource(R.drawable.ic_circlered);
-        }
+
     }
 
 
