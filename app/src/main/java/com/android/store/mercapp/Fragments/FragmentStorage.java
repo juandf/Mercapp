@@ -62,7 +62,7 @@ public class FragmentStorage extends Fragment {
     private ImageView imagepoint;
     FirebaseStorage storage;
 
-    
+
 
 
 
@@ -134,25 +134,7 @@ public class FragmentStorage extends Fragment {
 
 
     }
-    /*private void consultarStores() {
-        FirebaseFirestore db = FirebaseFirestore.getInstance();
-        CollectionReference reference = db.collection("Tiendas");
-
-        reference.get().addOnSuccessListener(new OnSuccessListener<QuerySnapshot>() {
-            @Override
-            public void onSuccess(QuerySnapshot queryDocumentSnapshots) {
-                ListaStorage = new ArrayList<>();
-                ListaStorage.clear();
-                for (QueryDocumentSnapshot documentSnapshot : queryDocumentSnapshots){
-                    Storage storage = documentSnapshot.toObject(Storage.class);
-                    ListaStorage.add(storage);
-                }
-                Renderlist();
-            }
-        });
-
-
-    }*/
+    
 
     private void  ConsultarStoresEnTiempoReal(){
         FirebaseFirestore dtbs = FirebaseFirestore.getInstance();
