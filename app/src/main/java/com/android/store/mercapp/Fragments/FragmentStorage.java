@@ -62,7 +62,7 @@ public class FragmentStorage extends Fragment {
     private ImageView imagepoint;
     FirebaseStorage storage;
 
-    //final CollectionReference reference = db.collection("Tiendas");
+    
 
 
 
@@ -72,7 +72,7 @@ public class FragmentStorage extends Fragment {
     private OnFragmentInteractionListener mListener;
     RecyclerView storageview;
     ArrayList<Storage> ListaStorage;
-    
+
     public FragmentStorage() {
         // Required empty public constructor
     }
