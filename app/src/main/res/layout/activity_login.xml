@@ -27,7 +27,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="18dp"
         android:layout_marginTop="40dp"
-        android:text="Bienvenido"
+        android:text="@string/title_bienvenida"
         android:textColor="@android:color/white"
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="@+id/imageView2"
@@ -41,7 +41,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="18dp"
         android:layout_marginTop="8dp"
-        android:text="Ingresa!"
+        android:text="@string/title_ingreso"
         android:textColor="@android:color/white"
         android:textSize="50sp"
         android:textStyle="bold"
@@ -111,7 +111,7 @@
             android:id="@+id/Password"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Password"
+            android:hint="@string/txt_password"
             android:inputType="textPassword"
             android:padding="10dp"
             android:paddingTop="0dp" />
@@ -127,7 +127,7 @@
         android:layout_marginBottom="8dp"
         android:background="@drawable/rec_gradient"
         android:padding="@dimen/cardview_compat_inset_shadow"
-        android:text="Iniciar Sesión"
+        android:text="@string/title_iniciarsesion"
         android:textAllCaps="false"
         android:textColor="#FFF"
         android:textSize="24sp"
@@ -152,7 +152,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="24dp"
-        android:text="No tienes cuenta ?"
+        android:text="@string/no_tienes_cuenta"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/guideline"
@@ -194,7 +194,7 @@
         app:srcCompat="@drawable/facebookrounded" />
 
     <ImageButton
-        android:id="@+id/imageView6"
+        android:id="@+id/LoginGoogleBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"

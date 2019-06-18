@@ -63,9 +63,6 @@ public class ExampleDialog  extends AppCompatDialogFragment {
 
                         if (estado){
                             estados = "Abierto";
-
-
-
                         }else {
                             estados = "Cerrado";
                         }

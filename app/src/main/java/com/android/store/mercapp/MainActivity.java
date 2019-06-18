@@ -52,7 +52,10 @@ public class MainActivity extends AppCompatActivity
     FirebaseAuth mAuth;
     FirebaseUser currentUser;
     private  static final String TAG="Log";
-    private int optionSelected=0;
+    private int optionSelected=1;
+    Fragment listastore = new FragmentStorage();
+
+
 
 
 
@@ -63,14 +66,13 @@ public class MainActivity extends AppCompatActivity
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-
+        getSupportFragmentManager().beginTransaction().replace(R.id.Contenedor,listastore).commit();
         FloatingActionButton fab = findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 switch (optionSelected){
                     case 1:
-
                         Toast.makeText(getApplicationContext(), "TIENDAS", Toast.LENGTH_SHORT).show();
                         openDialog();
                         break;
@@ -115,7 +117,7 @@ public class MainActivity extends AppCompatActivity
 
     private void openDialog() {
         ExampleDialog exampleDialog = new ExampleDialog();
-        exampleDialog.show(getSupportFragmentManager(), "example dialog");
+        exampleDialog.show(getSupportFragmentManager(), "dialog");
     }
 
     private void goLoginScreen() {
@@ -181,9 +183,9 @@ public class MainActivity extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.nav_store) {
-            fragment =new FragmentStorage();
-            FragmentSelected=true;
-            optionSelected=1;
+           /* fragment =new FragmentStorage();
+            FragmentSelected=true;*/
+
         } else if (id == R.id.nav_gallery) {
 
         } else if (id == R.id.nav_slideshow) {
@@ -198,7 +200,7 @@ public class MainActivity extends AppCompatActivity
              goLoginScreen();
         }
         if (FragmentSelected){
-            fragmentManager.beginTransaction().replace(R.id.Contenedor, fragment).commit();
+            //fragmentManager.beginTransaction().replace(R.id.Contenedor, fragment).commit();
         }
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
